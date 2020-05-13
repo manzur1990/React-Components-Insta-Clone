@@ -5,7 +5,8 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faHeart, faCircle, faCompass } from '@fortawesome/free-regular-svg-icons'
 import "./SearchBar.css";
 
-const SearchBar = () => {
+const SearchBar = (props) => {
+const { updateSearchTerm } = props
   return (
     <div className="search-bar-wrapper">
       <div className="social">
