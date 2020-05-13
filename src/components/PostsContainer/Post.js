@@ -10,7 +10,7 @@ import "./Posts.css";
 // set up state for the likes
 const Post = props => {
  const [likes, setLikes] = useState(0);
-
+console.log(likes)
   return (
     <div className="post-border">
       <PostHeader
@@ -26,6 +26,7 @@ const Post = props => {
           src={props.post.imageUrl}
         />
       </div>
+
       <LikeSection likes={props.post.likes}  setLikes={setLikes}/>
       <CommentSection
         postId={props.post.imageUrl}
